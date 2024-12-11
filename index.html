@@ -18,8 +18,16 @@
             background-color: #fff;
             width: 70%; /* 중앙 콘텐츠 너비 고정 */
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
             margin: 20px 0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
         }
         table {
             width: 100%;
@@ -48,10 +56,20 @@
             font-size: 0.9em;
             font-style: italic;
         }
+        ul li a {
+            margin-left: 10px;
+            font-size: 0.9em;
+            color: blue;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="content">
+        <header>
+            <img src="header-image.jpg" alt="프로그램 일정 헤더 이미지">
+        </header>
+
         <h1>프로그램 일정</h1>
         <table>
             <thead>
@@ -120,29 +138,34 @@
             <li>
                 DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands
                 <span>Hwayong Nam, Seungmin Baek, Minbok Wi, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, and Jung Ho Ahn</span>
+                <a href="slides/DRAMScope.pdf" download>[slide]</a>
             </li>
             <li>
-                AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference
+                AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference [<a href="slides/AttAcc.pdf" download>slides</a>]
                 <span>Jaehyun Park, Jaewan Choi, Kwanhee Kyung, Michael Jaemin Kim, Yongsuk Kwon, Nam Sung Kim, and Jung Ho Ahn</span>
+                
             </li>
             <li>
                 How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM
                 <span>Michael Jaemin Kim, Minbok Wi, Jaehyun Park, Seoyoung Ko, Jaeyoung Choi, Hwayong Nam, Nam Sung Kim, Jung Ho Ahn, and Eojin Lee</span>
+                <a href="slides/RowHammer.pdf" download>[slide]</a>
             </li>
             <li>
                 Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs
                 <span>Yeonhong Park, Jake Hyun, SangLyul Cho, Bonggeun Sim, and Jae W. Lee</span>
+                <a href="slides/AnyPrecisionLLM.pdf" download>[slide]</a>
             </li>
             <li>
                 FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference
                 <span>Seong Hoon Seo, Junghoon Kim, Donghyun Lee, Seonah Yoo, Seokwon Moon, Yeonhong Park, and Jae W. Lee</span>
+                <a href="slides/FACIL.pdf" download>[slide]</a>
             </li>
             <li>
                 RiF: Improving Read Performance of Modern SSDs Using an On-Die Early-Retry Engine
                 <span>Myoungjun Chun, Jaeyong Lee, Myungsuk Kim, Jisung Park, and Jihong Kim</span>
+                <a href="slides/RiF.pdf" download>[slide]</a>
             </li>
         </ul>
     </div>
 </body>
 </html>
-
