@@ -8,6 +8,18 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 0;
+            background-color: #d3d3d3; /* 회색 여백 */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .content {
+            background-color: #fff;
+            width: 70%; /* 중앙 콘텐츠 너비 고정 */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
         }
         table {
             width: 100%;
@@ -26,48 +38,111 @@
             list-style-type: disc;
             margin: 0;
             padding-left: 20px;
+            font-size: 1.2em; /* 글 크기 키움 */
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li span {
+            display: block;
+            font-size: 0.9em;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <h1>프로그램 일정</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>시간</th>
-                <th>프로그램</th>
-                <th>연사</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="content">
+        <h1>프로그램 일정</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>시간</th>
+                    <th>프로그램</th>
+                    <th>연사</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 ~ 09:05</td>
+                    <td>개회사</td>
+                    <td>김지홍 교수(서울대)</td>
+                </tr>
+                <tr>
+                    <td>09:05 ~ 09:20</td>
+                    <td>차세대데이터센터연구센터 소개</td>
+                    <td>김남승 교수(UIUC)</td>
+                </tr>
+                <tr>
+                    <td>09:20 ~ 09:30</td>
+                    <td>휴식</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09:30 ~ 09:50</td>
+                    <td>DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands</td>
+                    <td>남화용 연구원(서울대)</td>
+                </tr>
+                <tr>
+                    <td>09:50 ~ 10:10</td>
+                    <td>AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference</td>
+                    <td>경관희 연구원(서울대)</td>
+                </tr>
+                <tr>
+                    <td>10:10 ~ 10:30</td>
+                    <td>How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM</td>
+                    <td>김재민 연구원(서울대)</td>
+                </tr>
+                <tr>
+                    <td>10:30 ~ 10:45</td>
+                    <td>휴식</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:45 ~ 11:05</td>
+                    <td>Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs</td>
+                    <td>박연홍 연구원(서울대)</td>
+                </tr>
+                <tr>
+                    <td>11:05 ~ 11:25</td>
+                    <td>FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference</td>
+                    <td>서성훈 연구원(서울대)</td>
+                </tr>
+                <tr>
+                    <td>11:25 ~ 11:45</td>
+                    <td>RiF: Improving Read Performance of Modern SSDs Using an On-Die Early-Retry Engine</td>
+                    <td>천명준 연구원(서울대)</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <h2>발표 세션 소개</h2>
-    <ul>
-        <li>발표 1</li>
-        <li>발표 2</li>
-        <li>발표 3</li>
-    </ul>
+        <h1>발표 세션 소개</h1>
+        <ul>
+            <li>
+                DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands
+                <span>Hwayong Nam, Seungmin Baek, Minbok Wi, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, and Jung Ho Ahn</span>
+            </li>
+            <li>
+                AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference
+                <span>Jaehyun Park, Jaewan Choi, Kwanhee Kyung, Michael Jaemin Kim, Yongsuk Kwon, Nam Sung Kim, and Jung Ho Ahn</span>
+            </li>
+            <li>
+                How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM
+                <span>Michael Jaemin Kim, Minbok Wi, Jaehyun Park, Seoyoung Ko, Jaeyoung Choi, Hwayong Nam, Nam Sung Kim, Jung Ho Ahn, and Eojin Lee</span>
+            </li>
+            <li>
+                Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs
+                <span>Yeonhong Park, Jake Hyun, SangLyul Cho, Bonggeun Sim, and Jae W. Lee</span>
+            </li>
+            <li>
+                FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference
+                <span>Seong Hoon Seo, Junghoon Kim, Donghyun Lee, Seonah Yoo, Seokwon Moon, Yeonhong Park, and Jae W. Lee</span>
+            </li>
+            <li>
+                RiF: Improving Read Performance of Modern SSDs Using an On-Die Early-Retry Engine
+                <span>Myoungjun Chun, Jaeyong Lee, Myungsuk Kim, Jisung Park, and Jihong Kim</span>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
+
