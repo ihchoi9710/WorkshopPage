@@ -33,6 +33,10 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
             margin: 20px;
         }
+        .table-wrapper {
+        overflow-x: auto; /* 가로 스크롤 추가 */
+        margin-bottom: 20px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -74,68 +78,69 @@
     </header>
     <div class="content">
         <h1>프로그램 일정</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>시간</th>
-                    <th>프로그램</th>
-                    <th>연사</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>09:00 ~ 09:05</td>
-                    <td>개회사</td>
-                    <td>김지홍 교수(서울대)</td>
-                </tr>
-                <tr>
-                    <td>09:05 ~ 09:20</td>
-                    <td>차세대데이터센터연구센터 소개</td>
-                    <td>김남승 교수(UIUC)</td>
-                </tr>
-                <tr>
-                    <td>09:20 ~ 09:30</td>
-                    <td>휴식</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>09:30 ~ 09:50</td>
-                    <td>DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands</td>
-                    <td>남화용 연구원(서울대)</td>
-                </tr>
-                <tr>
-                    <td>09:50 ~ 10:10</td>
-                    <td>AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference</td>
-                    <td>경관희 연구원(서울대)</td>
-                </tr>
-                <tr>
-                    <td>10:10 ~ 10:30</td>
-                    <td>How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM</td>
-                    <td>김재민 연구원(서울대)</td>
-                </tr>
-                <tr>
-                    <td>10:30 ~ 10:45</td>
-                    <td>휴식</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10:45 ~ 11:05</td>
-                    <td>Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs</td>
-                    <td>박연홍 연구원(서울대)</td>
-                </tr>
-                <tr>
-                    <td>11:05 ~ 11:25</td>
-                    <td>FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference</td>
-                    <td>서성훈 연구원(서울대)</td>
-                </tr>
-                <tr>
-                    <td>11:25 ~ 11:45</td>
-                    <td>RiF: Improving Read Performance of Modern SSDs Using an On-Die Early-Retry Engine</td>
-                    <td>천명준 연구원(서울대)</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>프로그램</th>
+                        <th>연사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 ~ 09:05</td>
+                        <td>개회사</td>
+                        <td>김지홍 교수(서울대)</td>
+                    </tr>
+                    <tr>
+                        <td>09:05 ~ 09:20</td>
+                        <td>차세대데이터센터연구센터 소개</td>
+                        <td>김남승 교수(UIUC)</td>
+                    </tr>
+                    <tr>
+                        <td>09:20 ~ 09:30</td>
+                        <td>휴식</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>09:30 ~ 09:50</td>
+                        <td>DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands</td>
+                        <td>남화용 연구원(서울대)</td>
+                    </tr>
+                    <tr>
+                        <td>09:50 ~ 10:10</td>
+                        <td>AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference</td>
+                        <td>경관희 연구원(서울대)</td>
+                    </tr>
+                    <tr>
+                        <td>10:10 ~ 10:30</td>
+                        <td>How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM</td>
+                        <td>김재민 연구원(서울대)</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 ~ 10:45</td>
+                        <td>휴식</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10:45 ~ 11:05</td>
+                        <td>Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs</td>
+                        <td>박연홍 연구원(서울대)</td>
+                    </tr>
+                    <tr>
+                        <td>11:05 ~ 11:25</td>
+                        <td>FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference</td>
+                        <td>서성훈 연구원(서울대)</td>
+                    </tr>
+                    <tr>
+                        <td>11:25 ~ 11:45</td>
+                        <td>RiF: Improving Read Performance of Modern SSDs Using an On-Die Early-Retry Engine</td>
+                        <td>천명준 연구원(서울대)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <h1>발표 세션 소개</h1>
         <ul>
             <li>
